@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
+        repository: ${{ secrets.GIT_NAME }}/app-with-argocd
         ref: main
         token: ${{ secrets.GITHUB_TOKEN }}
         
