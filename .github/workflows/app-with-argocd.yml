@@ -68,7 +68,7 @@ jobs:
 
     - name: Set up Image
       run: | 
-       sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:[A-z0-9]*%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:${{ github.sha }}%" ./manifest/argocd-app.yaml
+       sed -i "s%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:[A-z0-9]*%image: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd:${{ github.sha }}%" ./manifest/argocd-deployment.yaml
     - name: Commit and push Changes
       run: |
        git config --local user.email "${{ secrets.GIT_EMAIL }}"
