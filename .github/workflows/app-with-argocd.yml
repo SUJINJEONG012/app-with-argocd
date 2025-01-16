@@ -65,7 +65,7 @@ jobs:
    
     - uses: actions/checkout@v4
       with:
-        repository: <repository_user>/app-with-argocd-manifest
+        repository: ${{ secrets.DOCKERHUB_USERNAME }}/app-with-argocd-manifest
         ref: main
         token: ${{ secrets.TOKEN }}
         
