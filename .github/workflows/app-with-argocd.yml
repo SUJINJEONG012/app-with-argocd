@@ -5,7 +5,7 @@ on:
    branches: 
      - main
    paths-ignore:
-     - '.github/workflows/*'  # 워크플로 파일이 변경될 경우 트리거되지 않도록 설정
+     - 'manifest/**'  # 트리거되지 않도록 설정
 
       
 jobs:
