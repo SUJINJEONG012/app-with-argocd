@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: SUJINJEONG012/app-with-argocd-manifest
+        repository: SUJINJEONG012/app-with-argocd
         ref: main
         token: ${{ secrets.GIT_TOKEN }}
         
